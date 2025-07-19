@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inventory - NoteTaking Made Easy</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="./assets/Inventory Icon.png">
 </head>
 <body>
     <div class="left">
         <div class="top">
-            <h1 class="heading">Inventory</h1>
+            <h1 class="heading"><img src="./assets/Inventory Icon.png" alt="Icon" class="icon">Inventory</h1>
             <img src="./assets/note-button.svg" alt="new note button" class="new-note-btn">
         </div>
         <div class="middle">
@@ -23,16 +24,30 @@
                 <div class="folder"><img src="./assets/folder.svg" alt="folder" class="folder-img"><div class="text">Folder1</div></div>
                 <div class="folder"><img src="./assets/folder.svg" alt="folder" class="folder-img"><div class="text">Folder2</div></div>
             </div>
+
+            <div class="journal">
+                <h2>Journals</h2>
+                <div class="folder"><img src="./assets/items.svg" alt="folder" class="folder-img"><div class="text">Journal1</div></div>
+                <div class="folder"><img src="./assets/items.svg" alt="folder" class="folder-img"><div class="text">Journal2</div></div>
+            </div>
         </div>
     </div>   
     <div class="right">
         <div class="home">
-            <h1 class="home-heading">Inventory</h1>
-            <img src="./assets/Open-Inventory.svg" alt="Open Inventory Button" class="open-inventory home-buttons">
-            <img src="./assets/Open Journal.svg" alt="Open Journal Button" class="open-journal home-buttons">
+            <h1 class="home-heading"><img src="./assets/Inventory Icon.png" alt="Inventory Icon" class="icon">Inventory</h1>
+            <!-- <img src="./assets/Open-Inventory.svg" alt="Open Inventory Button" class="open-inventory home-buttons">
+            <img src="./assets/Open Journal.svg" alt="Open Journal Button" class="open-journal home-buttons"> -->
+            <p>Open any file to get started</p>
+        </div>
+        <div class="file-container invisible">
+            <h1 class="file-heading" spellcheck="false" contenteditable="true" data-content-editable-leaf="true"></h1>
+            <div class="file-content" contenteditable="true"></div>
+            <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/dompurify@3.0.9/dist/purify.min.js"></script>
         </div>
     </div>
 
     <script src="scripts.js"></script>
+    
 </body>
 </html>
